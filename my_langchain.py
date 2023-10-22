@@ -17,9 +17,9 @@ llm = GPT4All(model=local_path, callback_manager=callback_manager, verbose=True)
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 # Hardcoded question
-question = "What Formula 1 pilot won the championship in the year Leonardo di Caprio was born?"
+#question = "What Formula 1 pilot won the championship in the year Leonardo di Caprio was born?"
 
 # User imput question...
-#question = input("Enter your question: ")
+question = input("Enter your question: ")
 
 llm_chain.run(question)
